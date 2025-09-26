@@ -74,5 +74,5 @@ import { CommonModule } from '@angular/common';
 })
 export class AppLayoutComponent {
   sidebarOpen = signal(true);
-  darkMode = signal(true); // activado por defecto estilo ChatGPT/YouTube
+  darkMode = signal(true);
 }
