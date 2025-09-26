@@ -542,7 +542,7 @@ export class BoardPageComponent implements OnInit, AfterViewInit {
   
   d: BoardDiagram = { classes: [], relations: [] };
   types: Attribute['type'][] = ['String', 'Integer', 'Real', 'Boolean', 'Date'];
-  relationTypes: RelationEdge['type'][] = ['Asociacion','Herencia','Composicion','Agregacion','Dependencia'];
+  relationTypes: RelationEdge['type'][] = ['association', 'inheritance', 'composition', 'aggregation', 'dependency'];
 
   drag: ClassNode | null = null;
   offX = 0;
@@ -712,7 +712,8 @@ export class BoardPageComponent implements OnInit, AfterViewInit {
     
     if(this.relO && this.type && this.relO.id!==n.id) {
       const id = 'r'+(Math.max(0,...this.d.relations.map(r=>+r.id.slice(1)))+1);
-      const multiplicities = this.type==='Herencia' ? { originMultiplicity:'1', targetMultiplicity:'1' } : { originMultiplicity:'1', targetMultiplicity:'*' };
+      const multiplicities = this.type==='inheritance' ? { originMultiplicity:'1', targetMultiplicity:'1' } : { originMultiplicity:'1', targetMultiplicity:'*' };
+      //const multiplicities = this.type==='inheritance' ? { originMultiplicity:'1', targetMultiplicity:'1' } :
       this.d.relations.push({id, type:this.type, originId:this.relO.id, targetId:n.id, ...multiplicities});
       this.relO = this.type = null;
     }
