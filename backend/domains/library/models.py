@@ -28,3 +28,6 @@ class Product(models.Model):
         db_table = 'products'
     def __str__(self):
         return str(self.id)
+
+
+

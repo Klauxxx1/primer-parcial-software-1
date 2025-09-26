@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('healthz/', healthz),
     path("", include("domains.library.urls")),
+    
 ]

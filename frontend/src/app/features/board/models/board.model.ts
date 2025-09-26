@@ -1,6 +1,6 @@
 export interface Attribute {
   name: string;
-  type: 'String' | 'Integer' | 'Real' | 'Boolean' | 'Date'; // 👈 restringido a los 5
+  type: 'String' | 'Integer' | 'Real' | 'Boolean' | 'Date'; // restringido a los 5
   scope?: '+' | '-' | '#';
 }
 
@@ -14,7 +14,7 @@ export interface ClassNode {
 
 export interface RelationEdge {
   id: string;
-  type: 'association' | 'inheritance' | 'composition' | 'aggregation'| 'dependency';
+  type: 'Asociacion' | 'Herencia' | 'Composicion' | 'Agregacion' | 'Dependencia';
   originId: string;
   targetId: string;
   originMultiplicity?: string;

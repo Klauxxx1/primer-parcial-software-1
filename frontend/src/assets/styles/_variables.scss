@@ -1,0 +1,205 @@
+// SISTEMA DE COLORES
+// ------------------
+
+// Variables para tema claro/oscuro
+:root {
+  // Colores base
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #f1f3f5;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-muted: #999999;
+  --border-color: #cccccc;
+  --divider-color: #e9ecef;
+
+  // Componentes específicos
+  --class-bg: #f5f5ff;
+  --class-header: #e0e0ff;
+  --button-bg: #f0f0f0;
+  --button-hover: #e0e0e0;
+  --input-bg: #ffffff;
+  --input-border: #ced4da;
+  --input-focus-border: #86b7fe;
+  --card-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+  // Colores de acentuación
+  --accent-color: #3f51b5;
+  --accent-light: #7986cb;
+  --accent-dark: #303f9f;
+  
+  // Colores de estado
+  --success-color: #4caf50;
+  --error-color: #f44336;
+  --warning-color: #ff9800;
+  --info-color: #2196f3;
+
+  // Colores de UML
+  --relationship-line: #666666;
+  --inheritance-arrow: #ff9800;
+  --composition-arrow: #f44336;
+  --aggregation-arrow: #2196f3;
+  --association-arrow: #4caf50;
+}
+
+// Tema oscuro
+@media (prefers-color-scheme: dark) {
+  :root {
+    // Colores base
+    --bg-primary: #1e1e1e;
+    --bg-secondary: #252525;
+    --bg-tertiary: #2d2d2d;
+    --text-primary: #e0e0e0;
+    --text-secondary: #b0b0b0;
+    --text-muted: #808080;
+    --border-color: #555555;
+    --divider-color: #444444;
+
+    // Componentes específicos
+    --class-bg: #2d2d3a;
+    --class-header: #3a3a4a;
+    --button-bg: #3a3a3a;
+    --button-hover: #4a4a4a;
+    --input-bg: #2d2d2d;
+    --input-border: #555555;
+    --input-focus-border: #5a74b0;
+    --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    
+    // Colores de acentuación
+    --accent-color: #7986cb;
+    --accent-light: #9fa8da;
+    --accent-dark: #5c6bc0;
+    
+    // Colores de estado
+    --success-color: #66bb6a;
+    --error-color: #e57373;
+    --warning-color: #ffb74d;
+    --info-color: #64b5f6;
+
+    // Colores de UML
+    --relationship-line: #aaaaaa;
+    --inheritance-arrow: #ffb74d;
+    --composition-arrow: #e57373;
+    --aggregation-arrow: #64b5f6;
+    --association-arrow: #81c784;
+  }
+}
+
+// TIPOGRAFÍA
+// ----------
+
+:root {
+  --font-family-base: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-family-monospace: 'Roboto Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  
+  --font-size-xs: 0.75rem;    // 12px
+  --font-size-sm: 0.875rem;   // 14px
+  --font-size-base: 1rem;     // 16px
+  --font-size-md: 1.125rem;   // 18px
+  --font-size-lg: 1.25rem;    // 20px
+  --font-size-xl: 1.5rem;     // 24px
+  --font-size-2xl: 1.875rem;  // 30px
+  --font-size-3xl: 2.25rem;   // 36px
+  
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  
+  --line-height-tight: 1.25;
+  --line-height-base: 1.5;
+  --line-height-loose: 1.75;
+}
+
+// ESPACIADO
+// ---------
+
+:root {
+  --spacing-0: 0;
+  --spacing-1: 0.25rem;   // 4px
+  --spacing-2: 0.5rem;    // 8px
+  --spacing-3: 0.75rem;   // 12px
+  --spacing-4: 1rem;      // 16px
+  --spacing-5: 1.5rem;    // 24px
+  --spacing-6: 2rem;      // 32px
+  --spacing-8: 3rem;      // 48px
+  --spacing-10: 4rem;     // 64px
+  --spacing-12: 6rem;     // 96px
+}
+
+// BORDES Y RADIOS
+// --------------
+
+:root {
+  --border-radius-sm: 0.125rem;  // 2px
+  --border-radius-base: 0.25rem;  // 4px
+  --border-radius-md: 0.375rem;   // 6px
+  --border-radius-lg: 0.5rem;     // 8px
+  --border-radius-xl: 0.75rem;    // 12px
+  --border-radius-full: 9999px;   // Circular
+  
+  --border-width-thin: 1px;
+  --border-width-normal: 2px;
+  --border-width-thick: 3px;
+}
+
+// ANIMACIONES Y TRANSICIONES
+// -------------------------
+
+:root {
+  --transition-duration-fast: 150ms;
+  --transition-duration-normal: 300ms;
+  --transition-duration-slow: 500ms;
+  
+  --transition-timing-ease: ease;
+  --transition-timing-ease-in: ease-in;
+  --transition-timing-ease-out: ease-out;
+  --transition-timing-ease-in-out: ease-in-out;
+  --transition-timing-linear: linear;
+}
+
+// LAYOUT
+// ------
+
+:root {
+  --header-height: 60px;
+  --sidebar-width: 250px;
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal-backdrop: 1040;
+  --z-index-modal: 1050;
+  --z-index-popover: 1060;
+  --z-index-tooltip: 1070;
+}
+
+// SOMBRAS
+// -------
+
+:root {
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --shadow-md: 0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.10);
+  --shadow-xl: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+  // Sombras para modo oscuro - menos opacas para no destacar tanto
+  @media (prefers-color-scheme: dark) {
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 3px 6px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.4), 0 3px 6px rgba(0, 0, 0, 0.3);
+    --shadow-xl: 0 14px 28px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.45);
+  }
+}
+
+// BREAKPOINTS
+// -----------
+// Estos son los puntos de quiebre estándar de Bootstrap
+
+$breakpoints: (
+  'xs': 0,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1400px
+);
