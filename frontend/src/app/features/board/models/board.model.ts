@@ -15,7 +15,8 @@ export interface ClassNode {
 
 export interface RelationEdge {
   id: string;
-  type: 'association' | 'inheritance' | 'composition' | 'aggregation'| 'dependency';
+  type: 'asociacion' | 'herencia' | 'composicion' | 'agregacion'| 'dependencia';
+  //type: 'association' | 'inheritance' | 'composition' | 'aggregation'| 'dependency';
   originId: string;
   targetId: string;
   originMultiplicity?: string;
